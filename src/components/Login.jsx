@@ -40,6 +40,7 @@ export default function Login() {
         <div className='w-auto h-auto'>
             <div className='mt-[200px] mb-[50px]'>Enter Email:
             <input 
+                id='email'
                 type="text" 
                 className='border-[2px] border-[black]'
                 value={Email}
@@ -48,6 +49,7 @@ export default function Login() {
             </div>
             <div>Enter Password:
             <input 
+                id='password'
                 type="password" 
                 value={Password}
                 className='border-[2px] border-[black]'
@@ -57,6 +59,7 @@ export default function Login() {
         </div>
         
         <input 
+        id='submit'
         className='border-[2px] m-10 w-[100px] bg-[yellow] border-[black]'
          type="submit" />
       </form>

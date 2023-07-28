@@ -40,6 +40,7 @@ export default function Register() {
         <div className='w-auto h-auto'>
             <div className='mt-[200px] mb-[50px]'>Enter Username:
             <input 
+               id='name'
                 type="text" 
                 className='ml-[2px] border-[2px] border-[black]'
                 value={Username}
@@ -48,6 +49,7 @@ export default function Register() {
             </div>
             <div className=' mb-[50px]'>Enter Email:
             <input 
+                id='email'
                 type="text" 
                 className='ml-[40px] border-[2px] border-[black]'
                 value={Email}
@@ -57,6 +59,7 @@ export default function Register() {
             
             <div>Enter Password:
             <input 
+                id='password'
                 type="password" 
                 value={Password}
                 className='border-[2px] border-[black]'
@@ -66,7 +69,8 @@ export default function Register() {
         </div>
         
         <input 
-        className='border-[2px] m-10 w-[100px] bg-[yellow] border-[black]'
+         id='submit'
+         className='border-[2px] m-10 w-[100px] bg-[yellow] border-[black]'
          type="submit" />
       </form>
       <div>Have an account? <Link className='text-[blue]' to="/login">LOGIN</Link></div>

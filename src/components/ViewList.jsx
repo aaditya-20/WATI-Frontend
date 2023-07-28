@@ -22,10 +22,10 @@ export default function ViewList() {
       </div>
       <div className="flex flex-col mt-[40px]">
         {new_friends &&
-          new_friends.map((val) => (
+          new_friends.map((val,index) => (
             <div
               className="w-auto m-[10px] text-[30px] border-[2px] h-[60px] bg-[#BBFFFF]"
-              key={new_friends.length}
+              key={index}
             >
               <span className="m-[10px]">name:{val.name}</span>
               <span> Phone Number:{val.phoneNumber}</span>
